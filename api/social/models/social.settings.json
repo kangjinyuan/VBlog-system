@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "socials",
+  "info": {
+    "name": "Social",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "avatarUrl": {
+      "type": "string",
+      "required": false
+    },
+    "htmlUrl": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "integer",
+      "required": true
+    },
+    "githubUsername": {
+      "type": "string"
+    },
+    "blog": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    }
+  }
+}
